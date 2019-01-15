@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/unique-email-addresses/
 
+use std::collections::HashSet;
+
 pub fn num_unique_emails(emails: Vec<String>) -> i32 {
     emails.iter().map(|s| {
         let split: Vec<&str> = s.split('@').collect();

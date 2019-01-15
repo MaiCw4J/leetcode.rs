@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/next-greater-element-i/
 
+use std::collections::HashMap;
+
 pub fn next_greater_element(nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
     let mut res = nums1;
     let mut stack = vec![];
