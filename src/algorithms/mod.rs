@@ -24,3 +24,6 @@ pub mod hamming_distance_461;
 pub mod judge_circle_657;
 pub mod next_greater_element_i_496;
 pub mod find_complement_476;
+pub mod number_of_lines_806;
+pub mod distribute_candies_575;
+pub mod keyboard_row_500;
