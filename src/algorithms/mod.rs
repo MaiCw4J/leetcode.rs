@@ -27,3 +27,6 @@ pub mod find_complement_476;
 pub mod number_of_lines_806;
 pub mod distribute_candies_575;
 pub mod keyboard_row_500;
+pub mod uncommon_from_sentences_884;
+pub mod fizz_buzz_412;
+pub mod detect_capital_use_520;
