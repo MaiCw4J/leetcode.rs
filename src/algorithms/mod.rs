@@ -30,3 +30,6 @@ pub mod keyboard_row_500;
 pub mod uncommon_from_sentences_884;
 pub mod fizz_buzz_412;
 pub mod detect_capital_use_520;
+pub mod letter_case_permutation_784;
+pub mod to_goat_latin_824;
+pub mod reverse_only_letters_917;
