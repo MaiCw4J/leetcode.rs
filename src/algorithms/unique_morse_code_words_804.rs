@@ -16,6 +16,19 @@ pub fn unique_morse_representations(words: Vec<String>) -> i32 {
     set.len() as i32
 }
 
+// FP
+pub fn unique_morse_representations_ii(words: Vec<String>) -> i32 {
+    let d = vec![".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
+    let a_ascii = 'a' as u8;
+    words.into_iter()
+         .map(|e| e.into_bytes().iter()
+                   .map(|s| s - a_ascii)
+                   .map(|s| s as usize)
+                   .map(|s| d[s]).collect::<Vec<&str>>()
+                   .connect("")) // vec -> string
+         .collect::<HashSet<String>>().len() as i32
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -23,6 +36,7 @@ mod tests {
     #[test]
     fn test() {
         let words = vec!["gin".to_owned(), "zen".to_owned(), "gig".to_owned(), "msg".to_owned()];
-        assert_eq!(2, unique_morse_representations(words));
+        assert_eq!(2, unique_morse_representations(words.clone()));
+        assert_eq!(2, unique_morse_representations_ii(words));
     }
 }
