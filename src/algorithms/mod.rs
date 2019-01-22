@@ -33,3 +33,4 @@ pub mod detect_capital_use_520;
 pub mod letter_case_permutation_784;
 pub mod to_goat_latin_824;
 pub mod reverse_only_letters_917;
+pub mod unique_morse_code_words_804;
