@@ -8,7 +8,7 @@ pub fn letter_case_permutation(s: String) -> Vec<String> {
         let (mut j, ll) = (0, res.len());
         while bytes[i].is_ascii_alphabetic() && j < ll {
             let mut a = res[j].clone().into_bytes();
-            a[i] ^= (1 << 5);
+            a[i] ^= 1 << 5;
             res.push(String::from_utf8(a).unwrap());
             j += 1;
         }
@@ -32,7 +32,7 @@ fn handle(s: &mut str, i: usize, res: &mut Vec<String>) {
     handle(s, i + 1, res);
     let bytes = unsafe { s.as_bytes_mut() };
     if bytes[i].is_ascii_alphabetic()  {
-        bytes[i] ^= (1 << 5);
+        bytes[i] ^= 1 << 5;
         handle(s, i + 1, res);
     }
 }

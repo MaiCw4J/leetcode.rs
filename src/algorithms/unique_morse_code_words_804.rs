@@ -25,7 +25,7 @@ pub fn unique_morse_representations_ii(words: Vec<String>) -> i32 {
                    .map(|s| s - a_ascii)
                    .map(|s| s as usize)
                    .map(|s| d[s]).collect::<Vec<&str>>()
-                   .connect("")) // vec -> string
+                   .join("")) // vec -> string
          .collect::<HashSet<String>>().len() as i32
 }
 
