@@ -36,3 +36,4 @@ pub mod reverse_only_letters_917;
 pub mod unique_morse_code_words_804;
 pub mod largest_perimeter_976;
 pub mod fair_candy_swap_888;
+pub mod find_max_consecutive_ones_485;
