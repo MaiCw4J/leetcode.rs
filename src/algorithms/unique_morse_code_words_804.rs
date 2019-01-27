@@ -10,7 +10,7 @@ pub fn unique_morse_representations(words: Vec<String>) -> i32 {
         let res = e.into_bytes().iter()
             .map(|s| (s - a_ascii) as usize)
             .map(|s| d[s]).collect::<Vec<&str>>()
-            .connect("");
+            .join("");
         set.insert(res);
     }
     set.len() as i32

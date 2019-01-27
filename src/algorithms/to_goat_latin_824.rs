@@ -17,7 +17,7 @@ pub fn to_goat_latin(s: String) -> String {
                 sb.push(c);
             }
             sb.push_str("ma");
-            for i in 0..index {
+            for _i in 0..index {
                 sb.push('a');
             }
         }
