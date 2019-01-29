@@ -38,3 +38,5 @@ pub mod largest_perimeter_976;
 pub mod fair_candy_swap_888;
 pub mod find_max_consecutive_ones_485;
 pub mod daily_temperatures_739;
+pub mod nim_game_292;
+pub mod monotonic_array_896;
