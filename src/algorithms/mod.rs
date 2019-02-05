@@ -40,3 +40,4 @@ pub mod find_max_consecutive_ones_485;
 pub mod daily_temperatures_739;
 pub mod nim_game_292;
 pub mod monotonic_array_896;
+pub mod fibonacci_number_509;
