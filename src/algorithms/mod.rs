@@ -41,3 +41,5 @@ pub mod daily_temperatures_739;
 pub mod nim_game_292;
 pub mod monotonic_array_896;
 pub mod fibonacci_number_509;
+pub mod sort_array_by_parity_905;
+pub mod min_deletion_size_944;

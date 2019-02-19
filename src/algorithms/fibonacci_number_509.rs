@@ -21,12 +21,13 @@ pub fn fib_ii(n: i32) -> i32 {
     c[n]
 }
 
+// 动态规划
 pub fn fib_iii(n: i32) -> i32 {
     if n < 2 {
         return n;
     }
     let (mut a, mut b, mut c) = (0, 1, 0);
-    for i in 1..n {
+    for _i in 1..n {
         c = a + b;
         a = b;
         b = c;
