@@ -43,3 +43,4 @@ pub mod monotonic_array_896;
 pub mod fibonacci_number_509;
 pub mod sort_array_by_parity_905;
 pub mod min_deletion_size_944;
+pub mod array_pair_sum_561;
