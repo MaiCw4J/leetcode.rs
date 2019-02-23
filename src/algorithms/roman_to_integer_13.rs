@@ -26,7 +26,7 @@ pub fn roman_to_int(s: String) -> i32 {
             }
         }
     }
-    sum + m.get(&bytes[len]).unwrap()
+    sum + m[&bytes[len]]
 }
 
 #[cfg(test)]

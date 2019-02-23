@@ -13,9 +13,7 @@ pub fn reverse_only_letters(s: String) -> String {
         while i < j && !bytes[j].is_ascii_alphabetic() {
             j -= 1;
         }
-        let temp = bytes[i];
-        bytes[i] = bytes[j];
-        bytes[j] = temp;
+        bytes.swap(i, j);
         i += 1;
         j -= 1;
     }

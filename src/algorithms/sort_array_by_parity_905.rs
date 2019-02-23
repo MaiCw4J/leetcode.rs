@@ -5,9 +5,7 @@ pub fn sort_array_by_parity(a: Vec<i32>) -> Vec<i32> {
     let mut j = 0;
     for i in 0..a.len() {
         if a[i] & 1 == 0 {
-            let temp = a[j];
-            a[j] = a[i];
-            a[i] = temp;
+            a.swap(i, j);
             j += 1;
         }
     }

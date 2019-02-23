@@ -3,7 +3,7 @@
 use std::collections::HashSet;
 
 pub fn num_jewels_in_stones(j: String, s: String) -> i32 {
-    let jewels_set: HashSet<char> = j.chars().into_iter().collect();
+    let jewels_set: HashSet<char> = j.chars().collect();
     s.chars().filter(|s| jewels_set.contains(s)).count() as i32
 }
 

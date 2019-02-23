@@ -4,7 +4,7 @@ use std::collections::HashSet;
 
 pub fn unique_morse_representations(words: Vec<String>) -> i32 {
     let d = vec![".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
-    let a_ascii = 'a' as u8;
+    let a_ascii = b'a';
     let mut set = HashSet::new();
     for e in words {
         let res = e.into_bytes().iter()
@@ -19,7 +19,7 @@ pub fn unique_morse_representations(words: Vec<String>) -> i32 {
 // FP
 pub fn unique_morse_representations_ii(words: Vec<String>) -> i32 {
     let d = vec![".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."];
-    let a_ascii = 'a' as u8;
+    let a_ascii = b'a';
     words.into_iter()
          .map(|e| e.into_bytes().iter()
                    .map(|s| s - a_ascii)

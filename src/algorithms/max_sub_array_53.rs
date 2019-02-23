@@ -2,9 +2,8 @@
 
 pub fn max_sub_array(nums: Vec<i32>) -> i32 {
     let (mut cul_max, mut all_max) = (nums[0], nums[0]);
-    for i in 1..nums.len() {
-        let e = nums[i];
-        cul_max = e.max(e + cul_max);
+    for e in nums.iter().skip(1) {
+        cul_max = *e.max(&(e + cul_max));
         all_max = all_max.max(cul_max);
     }
     all_max

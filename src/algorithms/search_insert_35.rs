@@ -2,7 +2,7 @@
 
 pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
     for (i, e) in nums.iter().enumerate() {
-        if e >= &target {
+        if *e >= target {
             return i as i32;
         }
     }

@@ -2,7 +2,7 @@
 
 pub fn number_of_lines(widths: Vec<i32>, s: String) -> Vec<i32> {
     let (mut cur, mut res) = (0, 1);
-    let a_ascii = 'a' as u8; // 'a' 字符 ASCII码
+    let a_ascii = b'a'; // 'a' 字符 ASCII码
     for c in s.bytes() {
         let index = (c - a_ascii) as usize;
         let v = widths[index]; // 获取字符的位置

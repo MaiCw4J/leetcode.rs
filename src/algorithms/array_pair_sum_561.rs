@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/array-partition-i/
+
 // 排序后 取每组的第一个值，累计即为本题的解
 pub fn array_pair_sum(nums: Vec<i32>) -> i32 {
     let mut nums = nums;

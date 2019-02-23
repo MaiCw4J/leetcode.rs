@@ -2,7 +2,7 @@
 
 // 双指针 判断 i 与 i + 1位 是否相等 相等时原地删除i位置上的值，不相等时指针前移一位， 最后返回nums.len()
 pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
-    if nums.len() == 0 {
+    if nums.is_empty() {
         return 0;
     }
     let mut index: usize = 0;

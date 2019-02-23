@@ -8,11 +8,11 @@ pub fn add_binary(a: String, b: String) -> String {
     while index_a >= 0 || index_b >= 0 || cache == 1 {
         let mut sum = cache;
         if index_a >= 0 {
-            sum += &a[index_a as usize] - zero_char; // '0' ASCII
+            sum += a[index_a as usize] - zero_char; // '0' ASCII
             index_a -= 1;
         }
         if index_b >= 0 {
-            sum += &b[index_b as usize] - zero_char; // '0' ASCII
+            sum += b[index_b as usize] - zero_char; // '0' ASCII
             index_b -= 1;
         }
         res.push_str(&format!("{}", sum % 2));
