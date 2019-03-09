@@ -44,3 +44,6 @@ pub mod fibonacci_number_509;
 pub mod sort_array_by_parity_905;
 pub mod min_deletion_size_944;
 pub mod array_pair_sum_561;
+pub mod stone_game_877;
+pub mod count_bits_338;
+pub mod reverse_words_557;

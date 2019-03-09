@@ -2,7 +2,7 @@
 
 pub fn min_deletion_size(a: Vec<String>) -> i32 {
     let len = a[0].len();
-    let c = a.into_iter().map(|s| s.into_bytes()).collect::<Vec<Vec<u8>>>();
+    let c = a.into_iter().map(String::into_bytes).collect::<Vec<Vec<u8>>>();
     let mut res = 0;
     for i in 0..len {
         for x in 0..c.len() - 1 {

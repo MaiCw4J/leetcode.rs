@@ -8,9 +8,7 @@ pub fn reverse_string(s: String) -> String {
     let mut bytes = s.into_bytes();
     while i < j {
         // 交换两个值
-        bytes[i] ^= bytes[j];
-        bytes[j] ^= bytes[i];
-        bytes[i] ^= bytes[j];
+        bytes.swap(i, j);
         i += 1;
         j -= 1;
     }
