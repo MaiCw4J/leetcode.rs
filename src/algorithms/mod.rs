@@ -47,3 +47,7 @@ pub mod array_pair_sum_561;
 pub mod stone_game_877;
 pub mod count_bits_338;
 pub mod reverse_words_557;
+pub mod add_digits_258;
+pub mod shortest_completing_word_748;
+pub mod transpose_matrix_867;
+pub mod toeplitz_matrix_766;
