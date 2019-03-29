@@ -51,3 +51,6 @@ pub mod add_digits_258;
 pub mod shortest_completing_word_748;
 pub mod transpose_matrix_867;
 pub mod toeplitz_matrix_766;
+pub mod bitwise_complement_1012;
+pub mod island_perimeter_463;
+pub mod move_zeroes_283;
