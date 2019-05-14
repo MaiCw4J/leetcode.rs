@@ -54,3 +54,4 @@ pub mod toeplitz_matrix_766;
 pub mod bitwise_complement_1012;
 pub mod island_perimeter_463;
 pub mod move_zeroes_283;
+pub mod sorted_squares_977;
