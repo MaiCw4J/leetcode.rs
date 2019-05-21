@@ -55,3 +55,4 @@ pub mod bitwise_complement_1012;
 pub mod island_perimeter_463;
 pub mod move_zeroes_283;
 pub mod sorted_squares_977;
+pub mod remove_outer_parentheses_1021;
