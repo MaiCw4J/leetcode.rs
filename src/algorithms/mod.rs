@@ -56,3 +56,7 @@ pub mod island_perimeter_463;
 pub mod move_zeroes_283;
 pub mod sorted_squares_977;
 pub mod remove_outer_parentheses_1021;
+pub mod deck_revealed_increasing_950;
+pub mod smallest_range_i_908;
+pub mod divisor_game_1025;
+pub mod num_rook_captures_999;
