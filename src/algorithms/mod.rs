@@ -63,3 +63,4 @@ pub mod num_rook_captures_999;
 pub mod peak_index_in_mountain_array_852;
 pub mod height_checker_1051;
 pub mod recent_counter_933;
+pub mod defang_i_paddr_1108;
